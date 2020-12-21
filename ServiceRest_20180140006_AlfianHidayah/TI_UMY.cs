@@ -15,7 +15,7 @@ namespace ServiceRest_20180140006_AlfianHidayah
         {
             string msg = "Gagal";
             SqlConnection sqlcon = new SqlConnection("Data Source=DESKTOP-3M69Q4U;Initial Catalog=\"TI UMY\";Persist Security Info=True;User ID=sa;Password=Pbun2018");
-            string query = String.Format("Insert into dbo.Mahasiswa values ('{0}', {1}', {2}', {3}',)", mhs.nama, mhs.nim, mhs.prodi, mhs.angkatan);
+            string query = String.Format("Insert into dbo.Mahasiswa values ('{0}', '{1}', '{2}', '{3}')", mhs.nama, mhs.nim, mhs.prodi, mhs.angkatan);
             SqlCommand sqlcom = new SqlCommand(query, sqlcon);
 
             try
